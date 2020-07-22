@@ -47,11 +47,10 @@ describe('Hello.vue', () => {
 
         expect(wrapper.html()).toMatchSnapshot()
 
-
-        
         // wrapper.find('[jest="increment-button"]').trigger('click')
 
         // expect(wrapper.html()).toMatchSnapshot()
+        
     })
 })
 

@@ -23,17 +23,14 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
     mode: 'history',
-    routes: [{
-            path: '/dashboard',
-            component: require('./components/Counter.vue').default
+    routes: [
+        {
+            path: '/',
+            redirect: '/isme'
         },
         {
-            path: '/profile',
-            component: require('./components/Profile.vue').default
-        },
-        {
-            path: '/users',
-            component: require('./components/Users.vue').default
+            path: '/isme',
+            component: require('./components/IsMe.vue').default
         }
     ],
 

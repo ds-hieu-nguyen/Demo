@@ -11,16 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/database', 'DatabaseController@database');
-Route::get('/create', 'DatabaseController@database');
-Route::post('/create', 'DatabaseController@addColumn')->name('post.database');
-Route::post('/delete', 'DatabaseController@delete')->name('delete.col');
 
-Auth::routes();
+Route::get('/', 'HomeController@home');
+Route::get('/{path}', 'HomeController@home');
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('{path}', 'HomeController@index');
 
