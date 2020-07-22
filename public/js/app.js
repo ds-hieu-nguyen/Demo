@@ -38258,7 +38258,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "row" }, [
     _c("div", { staticClass: "col-md-12 text-center" }, [
-      _c("h1", [_vm._v("LOVE DAYS")]),
+      _c("h1", { staticClass: "mt-5 pt-5" }, [_vm._v("LOVE DAYS")]),
       _vm._v(" "),
       _c("div", { attrs: { id: "clock-box" } }, [
         _c(

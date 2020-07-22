@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <div class="col-md-12 text-center">
-            <h1>LOVE DAYS</h1>
+            <h1 class="mt-5 pt-5">LOVE DAYS</h1>
             <div id="clock-box">
                     <div id="clock">
                         <date>0 DAYS</date>
