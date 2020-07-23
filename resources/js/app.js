@@ -6,13 +6,18 @@
 
 require('./bootstrap');
 
+  
 window.Vue = require('vue');
 
+var moment = require('moment');
+Vue.use(moment)
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import { Form, HasError, AlertError } from 'vform';
+import VueAudio from 'vue-audio';
 
+Vue.use(VueAudio)
 
 window.Form = Form;
 
@@ -20,6 +25,7 @@ Vue.component(HasError.name, HasError)
 Vue.component(AlertError.name, AlertError)
 
 Vue.use(VueRouter)
+
 
 const router = new VueRouter({
     mode: 'history',

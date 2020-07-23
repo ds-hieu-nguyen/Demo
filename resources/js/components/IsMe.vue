@@ -1,30 +1,31 @@
 <template>
     <div class="row">
         <div class="col-md-12 text-center">
-            <h1 class="mt-5 pt-5">LOVE DAYS</h1>
+            <h1 class="mt-5 pt-5"></h1>
             <div id="clock-box">
                     <div id="clock">
-                        <date>0 DAYS</date>
-                        <time>00:00:00</time>
+                        <date>{{time}} DAYS</date>
+                        <time>{{currTime.getHours()}}:{{currTime.getMinutes()}}:{{currTime.getSeconds()}}</time>
                     </div>
                 </div>
                 
                 <div id="info">
                     <div class="one">
-                            <img src="img/main.jpg" class="avt">
-                            <p>Lu minh thong</p>
+                            <img src="aimg/Love.jpg" class="avt">
+                            <p>A</p>
                     </div>
                     <div id="heart">
-                            <!-- ❤<anni>...</anni> -->
+                            <!-- ❤<anni>...</anni>  -->
                     </div>
                     <div class="two">
-                            <img src="img/main.jpg" class="avt">
-                            <p>Lu minh thong</p>
+                            <img src="aimg/Loveyou.jpg" class="avt">
+                            <p>b</p>
                     </div>
                 </div>
                 
                 <div id="music">
-                    <audio loop autoplay controls>Your browser does not support the audio element.</audio>
+                    <vue-audio file="myLocalFile"></vue-audio>
+                    <audio loop autoplay src="mp3/a123.mp3" controls="controls"></audio>
                 </div>
                 <footer>Thank you for your love 💕</footer>
             </div>
@@ -35,13 +36,47 @@
 export default {
     data() {
         return {
-            counter: 0,
+            time: 0,
+            message: 'Current Time:',
+            currTime: new Date(),
         }
     },
-    methods: {
-        helloWord() {
-            this.couter = 4
+   
+    created() {
+        this.startName();
+        setInterval(()=>{
+				this.currTime = new Date();
+			},1000)
+    },
+    
+    computed: {
+        sec() {
+            return this.currTime.getSeconds()*6;
+        },
+        min() {
+            return this.currTime.getMinutes()*6 + this.currTime.getSeconds()/10 ;
+        },
+        hour() {
+            return this. currTime.getHours()*30 + this.currTime.getMinutes()/2;
         }
+    },
+
+    mounted() {
+    },
+    methods: {
+        startName() {
+            var time1 = new Date();
+            console.log(time1);
+
+            var time2 = new Date('2019-07-21');
+            console.log(time2);
+
+            var t1 = time1.getTime();
+            var t2 = time2.getTime();
+
+            this.time = parseInt((t1-t2)/(24*3600*1000));
+        },
+        
     }
 }
 </script>

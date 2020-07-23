@@ -7,14 +7,14 @@
         <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-        <title>Together</title>
+        <title>💕Together</title>
 </head>
 <body>
     <div id="app">
             <div class="container-fluid">
                 <router-view></router-view>
             </div>
-        <footer>Thank you for your love 💕</footer>
+        <!-- <footer>Thank you for your love 💕</footer> -->
     </div> 
     <script src="{{ asset('/js/app.js') }}"></script>
 </body>
