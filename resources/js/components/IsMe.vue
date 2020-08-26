@@ -1,35 +1,50 @@
 <template>
+<div>
     <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-center  img-background">
             <h1 class="mt-5 pt-5"></h1>
             <div id="clock-box">
-                    <div id="clock">
-                        <date>{{time}} DAYS</date>
-                        <time>{{currTime.getHours()}}:{{currTime.getMinutes()}}:{{currTime.getSeconds()}}</time>
-                    </div>
+                <div id="clock">
+                    <date>{{time}} DAYS</date>
+                    <time>{{currTime.getHours()}}:{{currTime.getMinutes()}}:{{currTime.getSeconds()}}</time>
                 </div>
+            </div>
                 
-                <div id="info">
-                    <div class="one">
-                            <img src="aimg/Love.jpg" class="avt">
-                            <p>A</p>
-                    </div>
-                    <div id="heart">
-                            <!-- ❤<anni>...</anni>  -->
-                    </div>
-                    <div class="two">
-                            <img src="aimg/Loveyou.jpg" class="avt">
-                            <p>b</p>
-                    </div>
+            <div id="info">
+                <div class="one">
+                        <img src="aimg/Love.jpg" class="avt">
+                        <p>A</p>
                 </div>
+                <div id="heart">
+                        ❤<anni>...</anni> 
+                </div>
+                <div class="two">
+                        <img src="aimg/Loveyou.jpg" class="avt">
+                        <p>b</p>
+                </div>
+            </div>
                 
-                <div id="music">
-                    <vue-audio file="myLocalFile"></vue-audio>
-                    <audio loop autoplay src="mp3/a123.mp3" controls="controls"></audio>
-                </div>
-                <footer>Thank you for your love 💕</footer>
+            <div id="music">
+                <vue-audio file="myLocalFile"></vue-audio>
+                <audio loop autoplay src="mp3/a123.mp3" controls="controls"></audio>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 offset-md-5">
+            <h1><strong>My</strong></h1>
+            <div class="composition">
+                <img src="img/1.jpg" alt="photo1"
+                    class="composition__photo composition__photo--p1">
+                <img src="img/2.jpg" alt="photo2"
+                    class="composition__photo composition__photo--p2">
+                <img src="img/3.jpg" alt="photo3"
+                    class="composition__photo composition__photo--p3">
             </div>
         </div>
+    </div>
+</div>
 </template>
 
 <script>

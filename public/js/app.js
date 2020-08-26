@@ -1781,6 +1781,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -60710,53 +60725,71 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row" }, [
-    _c("div", { staticClass: "col-md-12 text-center" }, [
-      _c("h1", { staticClass: "mt-5 pt-5" }),
-      _vm._v(" "),
-      _c("div", { attrs: { id: "clock-box" } }, [
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-12 text-center  img-background" }, [
+        _c("h1", { staticClass: "mt-5 pt-5" }),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "clock-box" } }, [
+          _c(
+            "div",
+            { attrs: { id: "clock" } },
+            [
+              _c("date", [_vm._v(_vm._s(_vm.time) + " DAYS")]),
+              _vm._v(" "),
+              _c("time", [
+                _vm._v(
+                  _vm._s(_vm.currTime.getHours()) +
+                    ":" +
+                    _vm._s(_vm.currTime.getMinutes()) +
+                    ":" +
+                    _vm._s(_vm.currTime.getSeconds())
+                )
+              ])
+            ],
+            1
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "info" } }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c(
+            "div",
+            { attrs: { id: "heart" } },
+            [
+              _vm._v("\r\n                        ❤"),
+              _c("anni", [_vm._v("...")])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _vm._m(1)
+        ]),
+        _vm._v(" "),
         _c(
           "div",
-          { attrs: { id: "clock" } },
+          { attrs: { id: "music" } },
           [
-            _c("date", [_vm._v(_vm._s(_vm.time) + " DAYS")]),
+            _c("vue-audio", { attrs: { file: "myLocalFile" } }),
             _vm._v(" "),
-            _c("time", [
-              _vm._v(
-                _vm._s(_vm.currTime.getHours()) +
-                  ":" +
-                  _vm._s(_vm.currTime.getMinutes()) +
-                  ":" +
-                  _vm._s(_vm.currTime.getSeconds())
-              )
-            ])
+            _c("audio", {
+              attrs: {
+                loop: "",
+                autoplay: "",
+                src: "mp3/a123.mp3",
+                controls: "controls"
+              }
+            })
           ],
           1
-        )
-      ]),
-      _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "div",
-        { attrs: { id: "music" } },
-        [
-          _c("vue-audio", { attrs: { file: "myLocalFile" } }),
-          _vm._v(" "),
-          _c("audio", {
-            attrs: {
-              loop: "",
-              autoplay: "",
-              src: "mp3/a123.mp3",
-              controls: "controls"
-            }
-          })
-        ],
-        1
-      ),
-      _vm._v(" "),
-      _c("footer", [_vm._v("Thank you for your love 💕")])
-    ])
+        ),
+        _vm._v(" "),
+        _c("hr")
+      ])
+    ]),
+    _vm._v(" "),
+    _vm._m(2)
   ])
 }
 var staticRenderFns = [
@@ -60764,19 +60797,46 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "info" } }, [
-      _c("div", { staticClass: "one" }, [
-        _c("img", { staticClass: "avt", attrs: { src: "aimg/Love.jpg" } }),
-        _vm._v(" "),
-        _c("p", [_vm._v("A")])
-      ]),
+    return _c("div", { staticClass: "one" }, [
+      _c("img", { staticClass: "avt", attrs: { src: "aimg/Love.jpg" } }),
       _vm._v(" "),
-      _c("div", { attrs: { id: "heart" } }),
+      _c("p", [_vm._v("A")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "two" }, [
+      _c("img", { staticClass: "avt", attrs: { src: "aimg/Loveyou.jpg" } }),
       _vm._v(" "),
-      _c("div", { staticClass: "two" }, [
-        _c("img", { staticClass: "avt", attrs: { src: "aimg/Loveyou.jpg" } }),
+      _c("p", [_vm._v("b")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-3 offset-md-5" }, [
+        _c("h1", [_c("strong", [_vm._v("My")])]),
         _vm._v(" "),
-        _c("p", [_vm._v("b")])
+        _c("div", { staticClass: "composition" }, [
+          _c("img", {
+            staticClass: "composition__photo composition__photo--p1",
+            attrs: { src: "img/1.jpg", alt: "photo1" }
+          }),
+          _vm._v(" "),
+          _c("img", {
+            staticClass: "composition__photo composition__photo--p2",
+            attrs: { src: "img/2.jpg", alt: "photo2" }
+          }),
+          _vm._v(" "),
+          _c("img", {
+            staticClass: "composition__photo composition__photo--p3",
+            attrs: { src: "img/3.jpg", alt: "photo3" }
+          })
+        ])
       ])
     ])
   }
@@ -76042,15 +76102,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!******************************************!*\
   !*** ./resources/js/components/IsMe.vue ***!
   \******************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _IsMe_vue_vue_type_template_id_e8f82b66___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IsMe.vue?vue&type=template&id=e8f82b66& */ "./resources/js/components/IsMe.vue?vue&type=template&id=e8f82b66&");
 /* harmony import */ var _IsMe_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./IsMe.vue?vue&type=script&lang=js& */ "./resources/js/components/IsMe.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _IsMe_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _IsMe_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -76080,7 +76139,7 @@ component.options.__file = "resources/js/components/IsMe.vue"
 /*!*******************************************************************!*\
   !*** ./resources/js/components/IsMe.vue?vue&type=script&lang=js& ***!
   \*******************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
