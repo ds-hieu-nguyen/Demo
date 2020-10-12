@@ -1796,6 +1796,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -60733,7 +60754,7 @@ var render = function() {
         _c("div", { attrs: { id: "clock-box" } }, [
           _c(
             "div",
-            { attrs: { id: "clock" } },
+            { staticClass: "text-danger", attrs: { id: "clock" } },
             [
               _c("date", [_vm._v(_vm._s(_vm.time) + " DAYS")]),
               _vm._v(" "),
@@ -60777,7 +60798,7 @@ var render = function() {
               attrs: {
                 loop: "",
                 autoplay: "",
-                src: "mp3/a123.mp3",
+                src: "mp3/a2.mp3",
                 controls: "controls"
               }
             })
@@ -60789,7 +60810,11 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _vm._m(2)
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3),
+    _vm._v(" "),
+    _vm._m(4)
   ])
 }
 var staticRenderFns = [
@@ -60798,7 +60823,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "one" }, [
-      _c("img", { staticClass: "avt", attrs: { src: "aimg/Love.jpg" } }),
+      _c("img", { staticClass: "avt", attrs: { src: "img/Love.jpg" } }),
       _vm._v(" "),
       _c("p", [_vm._v("A")])
     ])
@@ -60808,7 +60833,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "two" }, [
-      _c("img", { staticClass: "avt", attrs: { src: "aimg/Loveyou.jpg" } }),
+      _c("img", { staticClass: "avt", attrs: { src: "img/Loveyou.jpg" } }),
       _vm._v(" "),
       _c("p", [_vm._v("b")])
     ])
@@ -60817,11 +60842,21 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
+    return _c("div", { staticClass: "row mt-5" }, [
+      _c("div", { staticClass: "col-md-12 text-center" }, [
+        _c("h1", { staticClass: "mb-5" }, [
+          _c("strong", [_vm._v("Ảnh đây nè !!!")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row mt-5" }, [
       _c("div", { staticClass: "col-md-3 offset-md-5" }, [
-        _c("h1", [_c("strong", [_vm._v("My")])]),
-        _vm._v(" "),
-        _c("div", { staticClass: "composition" }, [
+        _c("div", { staticClass: "composition mt-5" }, [
           _c("img", {
             staticClass: "composition__photo composition__photo--p1",
             attrs: { src: "img/1.jpg", alt: "photo1" }
@@ -60839,6 +60874,61 @@ var staticRenderFns = [
         ])
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "footer",
+      { staticClass: "page-footer font-small mdb-color darken-3 pt-4 bg-info" },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row d-flex justify-content-center" }, [
+            _c("div", { staticClass: "col-md-6" }, [
+              _c(
+                "div",
+                { staticClass: "embed-responsive embed-responsive-16by9 mb-4" },
+                [
+                  _c("iframe", {
+                    attrs: {
+                      width: "560",
+                      height: "315",
+                      src: "https://www.youtube.com/embed/7hN2EhL7Jg0",
+                      frameborder: "0",
+                      allow:
+                        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+                      allowfullscreen: ""
+                    }
+                  })
+                ]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "footer-copyright text-center text-danger py-3 off-me"
+          },
+          [
+            _vm._v("Cô Bé Của Anh:\r\n            "),
+            _c(
+              "a",
+              { attrs: { href: "https://www.facebook.com/minhhieu97.hust/" } },
+              [_vm._v("Hiu")]
+            ),
+            _vm._v("💕\r\n            "),
+            _c(
+              "a",
+              { attrs: { href: "https://www.facebook.com/Hang.ntt2001/" } },
+              [_vm._v("Han")]
+            )
+          ]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true

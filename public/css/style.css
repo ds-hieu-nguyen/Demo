@@ -38,7 +38,7 @@ h1 {
 
 #clock-box #clock {
     grid-column: 4 / 10;
-    background-color: #F8C8C8;
+    background-color: #6633FF;
     padding: .6rem 2rem;
     padding-top: .8rem;
     text-align: center;
@@ -166,4 +166,22 @@ footer {
 .full{
     height: 100%;
     width: 100%;
+}
+
+.img-background{
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 95vh;
+    -webkit-clip-path: ellipse(60% 60% at 50% 33%);
+    clip-path: ellipse(60% 60% at 50% 33%);
+}
+
+.off-me a{
+    text-decoration: none;
+}
+
+.off-me a:hover{
+    transform: scale(.9);
 }

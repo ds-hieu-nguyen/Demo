@@ -4,7 +4,7 @@
         <div class="col-md-12 text-center  img-background">
             <h1 class="mt-5 pt-5"></h1>
             <div id="clock-box">
-                <div id="clock">
+                <div id="clock" class="text-danger">
                     <date>{{time}} DAYS</date>
                     <time>{{currTime.getHours()}}:{{currTime.getMinutes()}}:{{currTime.getSeconds()}}</time>
                 </div>
@@ -12,29 +12,33 @@
                 
             <div id="info">
                 <div class="one">
-                        <img src="aimg/Love.jpg" class="avt">
+                        <img src="img/Love.jpg" class="avt">
                         <p>A</p>
                 </div>
                 <div id="heart">
                         ❤<anni>...</anni> 
                 </div>
                 <div class="two">
-                        <img src="aimg/Loveyou.jpg" class="avt">
+                        <img src="img/Loveyou.jpg" class="avt">
                         <p>b</p>
                 </div>
             </div>
                 
             <div id="music">
                 <vue-audio file="myLocalFile"></vue-audio>
-                <audio loop autoplay src="mp3/a123.mp3" controls="controls"></audio>
+                <audio loop autoplay src="mp3/a2.mp3" controls="controls"></audio>
             </div>
             <hr>
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-5">
+        <div class="col-md-12 text-center">
+            <h1 class="mb-5"><strong>Ảnh đây nè !!!</strong></h1>
+        </div>
+    </div>
+    <div class="row mt-5">
         <div class="col-md-3 offset-md-5">
-            <h1><strong>My</strong></h1>
-            <div class="composition">
+            <div class="composition mt-5">
                 <img src="img/1.jpg" alt="photo1"
                     class="composition__photo composition__photo--p1">
                 <img src="img/2.jpg" alt="photo2"
@@ -44,6 +48,23 @@
             </div>
         </div>
     </div>
+    <footer class="page-footer font-small mdb-color darken-3 pt-4 bg-info">
+
+        <!-- Footer Elements -->
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9 mb-4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7hN2EhL7Jg0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center text-danger py-3 off-me" >Cô Bé Của Anh:
+            <a href="https://www.facebook.com/minhhieu97.hust/">Hiu</a>💕
+            <a href="https://www.facebook.com/Hang.ntt2001/">Han</a>
+        </div>
+</footer>
 </div>
 </template>
 
